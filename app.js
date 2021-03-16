@@ -8,6 +8,7 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 const session = require('express-session')
 const flash = require('connect-flash');
+require('dotenv').config()
 
 
 const Purchase = require("./models/purchase")
@@ -23,9 +24,9 @@ mongoose.connect('mongodb://localhost:27017/my-stereo', {
 });
 
 app.use(session({
-    secret: 'nksnfoiehhrekwqnrlkje',
+    secret: process.env.SESSION_SECRET,
     resave: 'false',
-    saveUninitialized: 'true',
+    saveUninitialized: 'false',
 }))
 
 app.use(flash());
@@ -255,11 +256,9 @@ app.delete('/purchase/:id', ensureAuthenticated, async function (req, res) {
 })
 
 app.get('/sale', function (req, res) {
-
     res.render('sale')
 })
 
 app.get('/stock', function (req, res) {
-
     res.render('stock')
 })
