@@ -32,9 +32,7 @@ app.use(session({
 app.use(flash());
 
 app.use(express.static("public"));
-app.use(express.static('controller'));
 app.use(express.static('models'));
-// app.use(express.static('node_modules'));
 
 app.set('view engine', 'ejs');
 
