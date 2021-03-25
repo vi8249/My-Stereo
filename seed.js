@@ -12,55 +12,55 @@ mongoose.connect('mongodb://localhost:27017/my-stereo', {
 });
 
 const supplier = [{
-        name: "誠億電子",
-        items: [{
-                item_id: "R121",
-                item_name: "1K電阻",
-                price: "0.2"
-            }, {
+    name: "誠億電子",
+    items: [{
+        item_id: "R121",
+        item_name: "1K電阻",
+        price: "0.2"
+    }, {
 
-                item_id: "R123",
-                item_name: "5K電阻",
-                price: "0.4"
-            },
-            {
-
-                item_id: "C221",
-                item_name: "1C電容",
-                price: "1.5"
-            }
-        ]
+        item_id: "R123",
+        item_name: "5K電阻",
+        price: "0.4"
     },
     {
-        name: "瓏記電子",
-        items: [{
-            item_id: "T110",
-            item_name: "變壓器A",
-            price: "225"
-        }, {
 
-            item_id: "T112",
-            item_name: "變壓器B",
-            price: "500"
-        }]
+        item_id: "C221",
+        item_name: "1C電容",
+        price: "1.5"
     }
+    ]
+},
+{
+    name: "瓏記電子",
+    items: [{
+        item_id: "T110",
+        item_name: "變壓器A",
+        price: "225"
+    }, {
+
+        item_id: "T112",
+        item_name: "變壓器B",
+        price: "500"
+    }]
+}
 ]
 
 const purchase = {
     finalOrder: [{
-            supplierItemID: 'R121', //items
-            supplierItem: '1K電阻', //items
-            itemPrice: '0.2', //items
-            itemQuan: '1000',
-            totalPrice: '200'
-        },
-        {
-            supplierItemID: 'R123',
-            supplierItem: '5K電阻',
-            itemPrice: '0.4',
-            itemQuan: '2000',
-            totalPrice: '800'
-        }
+        supplierItemID: 'R121', //items
+        supplierItem: '1K電阻', //items
+        itemPrice: '0.2', //items
+        itemQuan: '1000',
+        totalPrice: '200'
+    },
+    {
+        supplierItemID: 'R123',
+        supplierItem: '5K電阻',
+        itemPrice: '0.4',
+        itemQuan: '2000',
+        totalPrice: '800'
+    }
     ],
     date: '2021-03-12',
     payMethod: '支票'
@@ -143,15 +143,15 @@ db.once('open', async () => {
     // for (let i = 0; i < supplier.length; ++i)
     //     await createSupplier(supplier[i].name, supplier[i].items)
 
-    const saltRounds = 10;
-    const account = 'admin'
-    const myPassword = '12345';
+    // const saltRounds = 10;
+    // const account = 'admin'
+    // const myPassword = '12345';
 
-    const user = new User({
-        account: account,
-        password: bcrypt.hashSync(myPassword, saltRounds)
-    })
-    await user.save()
-    const myHash = await User.findOne({account:'admin'})
-    console.log(bcrypt.compareSync(myPassword, myHash.password));
+    // const user = new User({
+    //     account: account,
+    //     password: bcrypt.hashSync(myPassword, saltRounds)
+    // })
+    // await user.save()
+    // const myHash = await User.findOne({account:'admin'})
+    // console.log(bcrypt.compareSync(myPassword, myHash.password));
 });

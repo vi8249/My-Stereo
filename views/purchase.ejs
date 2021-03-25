@@ -1,290 +1,398 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>My Stereo - 進貨</title>
+    <title>My Stereo - 採購</title>
 
-        <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css/style2.css">
-        <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-        <!-- Font Awesome JS -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
         </script>
 
-        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
         </script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="wrapper">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <img src="imgs/stereo.png" alt="">
-                    <h3>My Stereo</h3>
-                </div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="imgs/stereo.png" alt="">
+                <h3>My Stereo</h3>
+            </div>
 
-                <ul class="list-unstyled components">
-                    <li>
-                        <a href="/purchase">進貨</a>
-                    </li>
-                    <li>
-                        <a href="/sale">銷貨</a>
-                    </li>
-                    <li>
-                        <a href="/stock">庫存</a>
-                    </li>
-                </ul>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="/purchase">採購</a>
+                </li>
+                <li>
+                    <a href="/sale">銷貨</a>
+                </li>
+                <li>
+                    <a href="/stock">庫存</a>
+                </li>
+            </ul>
 
-                <ul class="list-unstyled CTAs">
-                </ul>
+            <ul class="list-unstyled CTAs">
+            </ul>
 
-            </nav>
+        </nav>
 
-            <!-- Page Content  -->
-            <div id="content">
+        <!-- Page Content  -->
+        <div id="content">
 
-                <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                    <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container-fluid">
 
-                        <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                            <i class="fas fa-align-left"></i>
-                            <span>選單</span>
-                        </button>
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                        <span>選單</span>
+                    </button>
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <h2 class="ml-auto mb-0">進貨管理</h2>
-                            <ul class="nav navbar-nav ml-auto">
-                                <!-- <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <h2 class="ml-auto mb-0">採購管理</h2>
+                        <ul class="nav navbar-nav ml-auto">
+                            <!-- <div>
                                     <button type="button" id="logOut" class="btn btn-dark">
                                         <span>登出</span>
                                     </button>
                                 </div> -->
-                                <li class="nav-item log-out-btn">
-                                    <a class="btn btn-dark" href="/signout">登出</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <li class="nav-item log-out-btn">
+                                <a class="btn btn-dark" href="/signout">登出</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
 
-                <!-- modal -->
+            <!-- modal -->
 
-                <div>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-lg btn-primary mb-5" data-toggle="modal"
-                        data-target="#newPurchaseModal">
-                        新增採購單
-                    </button>
+            <div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-lg btn-primary mb-5" data-toggle="modal"
+                    data-target="#newPurchaseModal">
+                    新增採購單
+                </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="newPurchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">新增採購單</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                <!-- Modal -->
+                <div class="modal fade" id="newPurchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">新增採購單</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row row-input">
+                                    <small>廠商</small>
+                                    <select class="form-select my-select supplier" name="supplier">
+                                        <!-- <option selected></option> -->
+
+                                    </select>
                                 </div>
 
-                                <div class="modal-body">
-                                    <div class="row row-input">
-                                        <small>廠商</small>
-                                        <select class="form-select my-select supplier" name="supplier">
+                                <div class="row row-input">
+                                    <div class="col-lg-4 col-md-6">
+                                        <small>產品代號</small>
+                                        <select class="form-select my-select supplierItemID" name="supplierItemID">
                                             <!-- <option selected></option> -->
 
                                         </select>
                                     </div>
-
-                                    <div class="row row-input">
-                                        <div class="col-lg-4 col-md-6">
-                                            <small>產品代號</small>
-                                            <select class="form-select my-select supplierItemID" name="supplierItemID">
-                                                <!-- <option selected></option> -->
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <small>品名</small>
-                                            <select class="form-select my-select supplierItem" name="supplierItem">
-                                                <!-- <option selected></option> -->
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <small>單價</small>
-                                            <input type="text" class="form-control formStyle itemPrice" name="itemPrice"
-                                                readonly>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <small>數量</small>
-                                            <input type="number" class="form-control formStyle itemQuan" name="formId"
-                                                min=1>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <small>單項總額</small>
-                                            <input type="text" class="form-control formStyle totalPrice" name="formId"
-                                                readonly>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col d-flex justify-content-end align-items-baseline mr-3">
-                                            <button type="button" class="btn btn-success addOrder">加入訂單</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="line"></div>
-
-                                    <h3>訂單項目</h3>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped text-center">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th scope="col"> </th>
-                                                    <th scope="col">產品代號</th>
-                                                    <th scope="col">品名</th>
-                                                    <th scope="col">單價</th>
-                                                    <th scope="col">數量</th>
-                                                    <th scope="col">單項總額</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="tbody myTable">
-                                                <tr>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-end  align-items-baseline">
-                                        <h6 class="mb-0 mr-3 text-dark">付款方式</h6>
-                                        <select class="form-select my-select payMethod" name="payMethod">
+                                    <div class="col-lg-4 col-md-6">
+                                        <small>品名</small>
+                                        <select class="form-select my-select supplierItem" name="supplierItem">
                                             <!-- <option selected></option> -->
-                                            <option value="cash">現金</option>
-                                            <option value="ticket">支票</option>
+
                                         </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <small>單價</small>
+                                        <input type="text" class="form-control formStyle itemPrice" name="itemPrice"
+                                            readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <small>數量</small>
+                                        <input type="number" class="form-control formStyle itemQuan" name="formId"
+                                            min=1>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <small>單項總額</small>
+                                        <input type="text" class="form-control formStyle totalPrice" name="formId"
+                                            readonly>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-end align-items-baseline mr-3">
+                                        <button type="button" class="btn btn-success addOrder">加入訂單</button>
                                     </div>
                                 </div>
 
-                                <div class="modal-footer">
-                                    <!-- <button type="button" class="btn btn-secondary cancel"
+
+                                <div class="line"></div>
+
+                                <h3>訂單項目</h3>
+                                <div class="table-responsive">
+                                    <table class="table table-striped text-center">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col"> </th>
+                                                <th scope="col">產品代號</th>
+                                                <th scope="col">品名</th>
+                                                <th scope="col">單價</th>
+                                                <th scope="col">數量</th>
+                                                <th scope="col">單項總額</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody myTable">
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="d-flex justify-content-end  align-items-baseline">
+                                    <h6 class="mb-0 mr-3 text-dark">付款方式</h6>
+                                    <select class="form-select my-select payMethod" name="payMethod">
+                                        <!-- <option selected></option> -->
+                                        <option value="cash">現金</option>
+                                        <option value="ticket">支票</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary cancel"
                                         data-dismiss="modal">Close</button> -->
-                                    <!-- <form action="/purchase" method="post" class="submitForm">
+                                <!-- <form action="/purchase" method="post" class="submitForm">
                                         <input type="text" class="date" name="date" hidden>
                                         <input type="text" class="payMethod" name="payMethod" hidden> -->
 
-                                    <button type="button" class="btn btn-primary newPurchase">提交</button>
-                                    <!-- </form> -->
-                                </div>
+                                <button type="button" class="btn btn-primary newPurchase">提交</button>
+                                <!-- </form> -->
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="ModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="ModalLabel"></h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row row-input">
+                                    <h5>廠商</h5>
+                                    <input type="text" class="form-control supplier" name="itemPrice" readonly>
                                 </div>
 
-                                <div class="modal-body">
-                                    <div class="row row-input">
-                                        <h5>廠商</h5>
-                                        <input type="text" class="form-control supplier" name="itemPrice" readonly>
-                                    </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-borderless text-center">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th scope="col">產品代號</th>
+                                                <th scope="col">品名</th>
+                                                <th scope="col">單價</th>
+                                                <th scope="col">數量</th>
+                                                <th scope="col">單價總額</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody_">
+                                        </tbody>
+                                    </table>
 
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-borderless text-center">
-                                            <thead class="thead">
-                                                <tr>
-                                                    <th scope="col">產品代號</th>
-                                                    <th scope="col">品名</th>
-                                                    <th scope="col">單價</th>
-                                                    <th scope="col">數量</th>
-                                                    <th scope="col">單價總額</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="tbody_">
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-end  align-items-baseline">
-                                        <h6 class="mb-0 mr-3 text-dark">狀態</h6>
-                                        <select class="form-select my-select status mr-3" name="status">
-                                            <!-- <option selected></option> -->
-                                            <option value="0">採購中</option>
-                                            <option value="1">完成</option>
-                                        </select>
-                                        <h6 class="mb-0 mr-3 text-dark">付款方式</h6>
-                                        <select class="form-select my-select payMethod" name="payMethod">
-                                            <!-- <option selected></option> -->
-                                            <option value="0">現金</option>
-                                            <option value="1">支票</option>
-                                        </select>
-                                    </div>
                                 </div>
 
-                                <div class="modal-footer">
-                                    <input type="text" class="purchaseId" hidden>
-                                    <!-- <button type="button" class="btn btn-secondary cancel"
+                                <div class="d-flex justify-content-end  align-items-baseline">
+                                    <h6 class="mb-0 mr-3 text-dark">狀態</h6>
+                                    <select class="form-select my-select status mr-3" name="status">
+                                        <!-- <option selected></option> -->
+                                        <option value="0">採購中</option>
+                                        <option value="1">完成</option>
+                                    </select>
+                                    <h6 class="mb-0 mr-3 text-dark">付款方式</h6>
+                                    <select class="form-select my-select payMethod" name="payMethod">
+                                        <!-- <option selected></option> -->
+                                        <option value="0">現金</option>
+                                        <option value="1">支票</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <input type="text" class="purchaseId" hidden>
+                                <!-- <button type="button" class="btn btn-secondary cancel"
                                         data-dismiss="modal">Close</button> -->
-                                    <button type="button" class="btn btn-danger deletePurchase">刪除</button>
-                                    <button type="button" class="btn btn-primary modiflyPurchase">修改</button>
-                                </div>
+                                <button type="button" class="btn btn-danger deletePurchase">刪除</button>
+                                <button type="button" class="btn btn-primary modiflyPurchase">修改</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- tab -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#allTab"
-                                role="tab">最新採購單</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="query-tab" data-toggle="tab" href="#queryTab" role="tab">查詢</a>
-                        </li>
-                    </ul>
+                <!-- tab -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#allTab" role="tab">最新採購單</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="query-tab" data-toggle="tab" href="#queryTab" role="tab">查詢</a>
+                    </li>
+                </ul>
 
-                    <div class="tab-content" id="myTabContent">
+                <div class="tab-content" id="myTabContent">
 
-                        <div class="tab-pane fade show active" id="allTab" role="tabpanel">
-                            <div class="container-fluid bg-white">
+                    <div class="tab-pane fade show active" id="allTab" role="tabpanel">
+                        <div class="container-fluid bg-white">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-borderless text-center">
+                                    <thead class="thead">
+                                        <tr>
+                                            <th scope="col">單號</th>
+                                            <th scope="col">廠商</th>
+                                            <th scope="col">付款方式</th>
+                                            <th scope="col">建立日期</th>
+                                            <th scope="col">狀態</th>
+                                            <th scope="col">詳細</th>
+                                        </tr>
+                                    </thead>
+                                    <% let count=10 %>
+                                        <%if (allPurchases.length < 10) {%>
+                                            <%count=allPurchases.length%>
+                                                <%}%>
+                                                    <tbody class="tbodyForpurchase">
+                                                        <%if (allPurchases.length===0) {%>
+                                                            <tr>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <% } else { %>
+                                                                <% for (let i=0; i < count; ++i) { %>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <%=allPurchases[i].orderId%>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%=allPurchases[i].orderTo%>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%=allPurchases[i].payment%>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%=allPurchases[i].date%>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%=allPurchases[i].status%>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" name="purchaseId"
+                                                                                value="<%= allPurchases[i]._id %>"
+                                                                                hidden>
+                                                                            <button type="click"
+                                                                                class="btn btn-outline-dark"
+                                                                                name="more">點我</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <% } %>
+                                                                        <% } %>
+                                                    </tbody>
+                                                    <tfoot>
+                                                    </tfoot>
+                                </table>
+                            </div>
+                            <p class="text-center pb-3">最近<%=count%>筆採購單</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="queryTab" role="tabpanel">
+                        <div class="input-group">
+                            <div class="row row-input">
+
+                                <div class="col-lg-2 col-md-6">
+                                    <small>單號</small>
+                                    <input type="text" class="form-control formStyle orderId">
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <small>廠商</small>
+                                    <select class="form-select my-select supplier">
+                                        <option value="0"> </option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <small>付款方式</small>
+                                    <select class="form-select my-select payment">
+                                        <option value="0"> </option>
+                                        <option value="1">現金</option>
+                                        <option value="2">支票</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <small>建立日期</small>
+                                    <input type="date" class="date">
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <small>狀態</small>
+                                    <select class="form-select my-select status">
+                                        <option value="0"> </option>
+                                        <option value="1">完成</option>
+                                        <option value="2">採購中</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-6 btn-col">
+                                    <button type="button" class="btn btn-info queryButton">查詢</button>
+                                </div>
+                            </div>
+
+                            <div class="row row-input justify-content-center queryResult" hidden>
+                                <div class="line"></div>
+                                <div>
+                                    <h2>查詢結果</h2>
+                                    <p class="text-center totalCount"></p>
+                                </div>
+
                                 <div class="table-responsive">
                                     <table class="table table-striped table-borderless text-center">
                                         <thead class="thead">
@@ -297,220 +405,121 @@
                                                 <th scope="col">詳細</th>
                                             </tr>
                                         </thead>
-                                        <% let count = 10 %>
-                                        <%if (allPurchases.length < 10) {%>
-                                        <%count = allPurchases.length%>
-                                        <%}%>
                                         <tbody class="tbodyForpurchase">
-                                            <%if (allPurchases.length === 0) {%>
-                                        <tr>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <% } else { %>
-                                        <% for (let i = 0; i < count; ++i) { %>
-                                        <tr>
-                                            <td> <%=allPurchases[i].orderId%> </td>
-                                            <td> <%=allPurchases[i].orderTo%> </td>
-                                            <td> <%=allPurchases[i].payment%> </td>
-                                            <td> <%=allPurchases[i].date%> </td>
-                                            <td> <%=allPurchases[i].status%> </td>
-                                            <td>
-                                                <input type="text" name="purchaseId" value="<%= allPurchases[i]._id %>"
-                                                    hidden>
-                                                <button type="click" class="btn btn-outline-dark"
-                                                    name="more">點我</button>
-                                            </td>
-                                        </tr>
-                                        <% } %>
-                                        <% } %>
+
                                         </tbody>
-                                        <tfoot>
-                                        </tfoot>
                                     </table>
+
                                 </div>
-                                <p class="text-center pb-3">最近<%=count%>筆採購單</p>
                             </div>
+
+
                         </div>
-                        <div class="tab-pane fade" id="queryTab" role="tabpanel">
-                            <div class="input-group">
-                                <div class="row row-input">
-
-                                    <div class="col-lg-2 col-md-6">
-                                        <small>單號</small>
-                                        <input type="text" class="form-control formStyle orderId">
-                                    </div>
-                                    <div class="col-lg-2 col-md-6">
-                                        <small>廠商</small>
-                                        <select class="form-select my-select supplier">
-                                            <option value="0"> </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-2 col-md-6">
-                                        <small>付款方式</small>
-                                        <select class="form-select my-select payment">
-                                            <option value="0"> </option>
-                                            <option value="1">現金</option>
-                                            <option value="2">支票</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-2 col-md-6">
-                                        <small>建立日期</small>
-                                        <input type="date" class="date">
-                                    </div>
-                                    <div class="col-lg-2 col-md-6">
-                                        <small>狀態</small>
-                                        <select class="form-select my-select status">
-                                            <option value="0"> </option>
-                                            <option value="1">完成</option>
-                                            <option value="2">採購中</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-2 col-md-6 btn-col">
-                                        <button type="button" class="btn btn-info queryButton">查詢</button>
-                                    </div>
-                                </div>
-
-                                <div class="row row-input justify-content-center queryResult" hidden>
-                                    <div class="line"></div>
-                                    <div>
-                                        <h2>查詢結果</h2>
-                                        <p class="text-center totalCount"></p>
-                                    </div>
-
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-borderless text-center">
-                                            <thead class="thead">
-                                                <tr>
-                                                    <th scope="col">單號</th>
-                                                    <th scope="col">廠商</th>
-                                                    <th scope="col">付款方式</th>
-                                                    <th scope="col">建立日期</th>
-                                                    <th scope="col">狀態</th>
-                                                    <th scope="col">詳細</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="tbodyForpurchase">
-
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
                     </div>
 
-                    <!-- <div>
+                </div>
+
+                <!-- <div>
                         Icons made by
                         <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a>
                         from
                         <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                     </div> -->
-                </div>
-
             </div>
 
-            <!-- jQuery CDN - Slim version (=without AJAX) -->
-            <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script> -->
-            <script src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-            <!-- Popper.JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-                crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
             </script>
-            <!-- Bootstrap JS -->
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-                crossorigin="anonymous">
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
             </script>
-            <!-- jQuery Custom Scroller CDN -->
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+        <!-- jQuery Custom Scroller CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
             </script>
 
-            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-            <script type="text/javascript">
-                var finalOrder = []
+        <script type="text/javascript">
+            var finalOrder = []
 
-                function loadDefaultOptions(data) {
-                    console.log(data)
-                    const defaultSupplier = data.supplier[0]
+            function loadDefaultOptions(data) {
+                console.log(data)
+                const defaultSupplier = data.supplier[0]
 
-                    for (let i = 0; i < data.supplier.length; ++i) {
-                        $('#newPurchaseModal .supplier').append(
-                            `<option value=${i}>${data.supplier[i].name}</option>`)
-                        $('#queryTab .supplier').append(
-                            `<option value=${i+1}>${data.supplier[i].name}</option>`)
-                    }
-
-                    for (let i = 0; i < defaultSupplier.items.length; ++i) {
-                        $('#newPurchaseModal .supplierItemID').append(
-                            `<option value=${i}>${defaultSupplier.items[i].item_id}</option>`)
-                        $('#newPurchaseModal .supplierItem').append(
-                            `<option value=${i}>${defaultSupplier.items[i].item_name}</option>`)
-                    }
-
-                    $("#newPurchaseModal .itemPrice").val(`${data.supplier[0].items[0].price}`)
+                for (let i = 0; i < data.supplier.length; ++i) {
+                    $('#newPurchaseModal .supplier').append(
+                        `<option value=${i}>${data.supplier[i].name}</option>`)
+                    $('#queryTab .supplier').append(
+                        `<option value=${i + 1}>${data.supplier[i].name}</option>`)
                 }
 
-                function appendDataOnOptionChange(data, option) {
-                    let found = data.supplier.find(function (ele) {
-                        return ele.name === $(`#newPurchaseModal .${option[0]}`).find(
-                            ":selected").text()
-                    })
+                for (let i = 0; i < defaultSupplier.items.length; ++i) {
+                    $('#newPurchaseModal .supplierItemID').append(
+                        `<option value=${i}>${defaultSupplier.items[i].item_id}</option>`)
+                    $('#newPurchaseModal .supplierItem').append(
+                        `<option value=${i}>${defaultSupplier.items[i].item_name}</option>`)
+                }
 
-                    for (let i = 1; i < option.length; ++i)
-                        $(`#newPurchaseModal .${option[i]} option`).remove();
+                $("#newPurchaseModal .itemPrice").val(`${data.supplier[0].items[0].price}`)
+            }
 
-                    for (let j = 1; j < option.length; ++j) {
-                        for (let i = 0; i < found.items.length; ++i) {
-                            if (option[j] === 'supplierItemID') {
-                                $(`#newPurchaseModal .${option[j]}`).append(
-                                    `<option value=${i}>${found.items[i].item_id}</option>`)
-                            } else {
-                                $(`#newPurchaseModal .${option[j]}`).append(
-                                    `<option value=${i}>${found.items[i].item_name}</option>`)
-                            }
+            function appendDataOnOptionChange(data, option) {
+                let found = data.supplier.find(function (ele) {
+                    return ele.name === $(`#newPurchaseModal .${option[0]}`).find(
+                        ":selected").text()
+                })
+
+                for (let i = 1; i < option.length; ++i)
+                    $(`#newPurchaseModal .${option[i]} option`).remove();
+
+                for (let j = 1; j < option.length; ++j) {
+                    for (let i = 0; i < found.items.length; ++i) {
+                        if (option[j] === 'supplierItemID') {
+                            $(`#newPurchaseModal .${option[j]}`).append(
+                                `<option value=${i}>${found.items[i].item_id}</option>`)
+                        } else {
+                            $(`#newPurchaseModal .${option[j]}`).append(
+                                `<option value=${i}>${found.items[i].item_name}</option>`)
                         }
                     }
-
-                    $("#newPurchaseModal .itemPrice").val(`${found.items[0].price}`)
-                    $('#newPurchaseModal .itemQuan').val('')
-                    $('#newPurchaseModal .totalPrice').val('')
                 }
 
-                // option = [supplier, supplierItem, supplierItemID]
-                function selectDataOnOptionChange(data, option) {
-                    $(`#newPurchaseModal .${option[1]}`).val($(`#newPurchaseModal .${option[2]}`).val())
-                    const price = data.supplier[$('#newPurchaseModal .supplier').val()]
-                        .items[$(`#newPurchaseModal .${option[1]}`).val()].price
-                    $('#newPurchaseModal .itemPrice').val(price)
-                    $('#newPurchaseModal .itemQuan').val('')
-                    $('#newPurchaseModal .totalPrice').val('')
-                }
+                $("#newPurchaseModal .itemPrice").val(`${found.items[0].price}`)
+                $('#newPurchaseModal .itemQuan').val('')
+                $('#newPurchaseModal .totalPrice').val('')
+            }
 
-                function appendDataToTable(data) {
-                    const tableBody = $("#newPurchaseModal .myTable")
-                    if (finalOrder.length === 0)
-                        tableBody.find("tr").remove();
+            // option = [supplier, supplierItem, supplierItemID]
+            function selectDataOnOptionChange(data, option) {
+                $(`#newPurchaseModal .${option[1]}`).val($(`#newPurchaseModal .${option[2]}`).val())
+                const price = data.supplier[$('#newPurchaseModal .supplier').val()]
+                    .items[$(`#newPurchaseModal .${option[1]}`).val()].price
+                $('#newPurchaseModal .itemPrice').val(price)
+                $('#newPurchaseModal .itemQuan').val('')
+                $('#newPurchaseModal .totalPrice').val('')
+            }
 
-                    if (finalOrder.find(ele => ele.supplierItemID === data.supplierItemID))
-                        alert('品項已在訂單中')
-                    else {
-                        finalOrder.push(data)
-                        tableBody.append(`
+            function appendDataToTable(data) {
+                const tableBody = $("#newPurchaseModal .myTable")
+                if (finalOrder.length === 0)
+                    tableBody.find("tr").remove();
+
+                if (finalOrder.find(ele => ele.supplierItemID === data.supplierItemID))
+                    alert('品項已在訂單中')
+                else {
+                    finalOrder.push(data)
+                    tableBody.append(`
                     <tr>
                         <td> <button type='button'class='btn btn-danger' name='remove'> - </button></td>
                         <td> ${data.supplierItemID}</td>
@@ -519,14 +528,14 @@
                         <td> ${data.itemQuan} </td>
                         <td> ${data.totalPrice} </td>
                     </tr>`)
-                    }
-                    // <td> <input type='checkbox' name='record'> </td>
                 }
+                // <td> <input type='checkbox' name='record'> </td>
+            }
 
-                function removeAllOrders() {
-                    finalOrder = []
-                    $("#newPurchaseModal .myTable tr").remove();
-                    $("#newPurchaseModal .myTable").append(`<tr>
+            function removeAllOrders() {
+                finalOrder = []
+                $("#newPurchaseModal .myTable tr").remove();
+                $("#newPurchaseModal .myTable").append(`<tr>
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>-</td>
@@ -534,249 +543,249 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 </tr>`)
-                }
+            }
 
-                $(document).ready(function () {
-                    $("#sidebar").mCustomScrollbar({
-                        theme: "minimal"
-                    });
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
 
-                    $('#sidebarCollapse').on('click', function () {
-                        $('#sidebar, #content').toggleClass('active');
-                        $('.collapse.in').toggleClass('in');
-                        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                    });
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
 
-                    // load data before 
-                    $.get("/supplier", function (data) {
-                        loadDefaultOptions(data)
-                        addMoreDataEvent()
-                    }).fail(function (err) {
-                        alert('load page failed!')
-                    })
+                // load data before 
+                $.get("/supplier", function (data) {
+                    loadDefaultOptions(data)
+                    addMoreDataEvent()
+                }).fail(function (err) {
+                    alert('load page failed!')
+                })
 
 
-                    // $('#newPurchaseModal').on('shown.bs.modal', function () {
-                    //     console.log('開啟視窗前呼叫');
-                    //     $.get("/supplier", function (data) {
-                    //         loadDefaultOptions(data)
-                    //     }).fail(function (err) {
-                    //         alert('load page failed!')
-                    //     })
-                    // })
+                // $('#newPurchaseModal').on('shown.bs.modal', function () {
+                //     console.log('開啟視窗前呼叫');
+                //     $.get("/supplier", function (data) {
+                //         loadDefaultOptions(data)
+                //     }).fail(function (err) {
+                //         alert('load page failed!')
+                //     })
+                // })
 
-                    $("#newPurchaseModal").on("hide.bs.modal", function (e) {
-                        console.log('關閉視窗前呼叫');
-                    });
+                $("#newPurchaseModal").on("hide.bs.modal", function (e) {
+                    console.log('關閉視窗前呼叫');
+                });
 
-                    $('.newPurchase').on('click', function (e) {
-                        // e.preventDefault()
-                        if (finalOrder.length) {
-                            $.post('/purchase', {
-                                    finalOrder: finalOrder,
-                                    orderTo: $('#newPurchaseModal .supplier').find(":selected")
-                                        .text(),
-                                    date: new Date().toJSON().slice(0, 10),
-                                    payMethod: $('#newPurchaseModal .payMethod').find(":selected")
-                                        .text()
-                                }, function (data) {
-                                    removeAllOrders()
-                                    // $(".modal-footer .cancel").click()
-
-                                })
-                                .fail(function (err) {
-                                    alert("提交失敗");
-                                }).always(function () {
-                                    alert("提交成功");
-                                    $('#newPurchaseModal').modal('toggle')
-                                    window.location.reload(true)
-                                })
-                        } else {
-                            alert("無訂購項目");
-                        }
-                    })
-
-                    $('#newPurchaseModal .supplier').on('change', function (e) {
-                        $.get("/supplier", function (data) {
-                            appendDataOnOptionChange(data, [
-                                'supplier',
-                                'supplierItem',
-                                'supplierItemID',
-                                'itemPrice',
-                            ])
+                $('.newPurchase').on('click', function (e) {
+                    // e.preventDefault()
+                    if (finalOrder.length) {
+                        $.post('/purchase', {
+                            finalOrder: finalOrder,
+                            orderTo: $('#newPurchaseModal .supplier').find(":selected")
+                                .text(),
+                            date: new Date().toJSON().slice(0, 10),
+                            payMethod: $('#newPurchaseModal .payMethod').find(":selected")
+                                .text()
+                        }, function (data) {
                             removeAllOrders()
-                        })
-                    })
+                            // $(".modal-footer .cancel").click()
 
-                    $('#newPurchaseModal .supplierItemID').on('change', function (e) {
-                        $.get("/supplier", function (data) {
-                            selectDataOnOptionChange(data, [
-                                'supplier',
-                                'supplierItem',
-                                'supplierItemID',
-                            ])
                         })
-                    })
+                            .fail(function (err) {
+                                alert("提交失敗");
+                            }).always(function () {
+                                alert("提交成功");
+                                $('#newPurchaseModal').modal('toggle')
+                                window.location.reload(true)
+                            })
+                    } else {
+                        alert("無訂購項目");
+                    }
+                })
 
-                    $('#newPurchaseModal .supplierItem').on('change', function (e) {
-                        $.get("/supplier", function (data) {
-                            selectDataOnOptionChange(data, [
-                                'supplier',
-                                'supplierItemID',
-                                'supplierItem'
-                            ])
-                        })
+                $('#newPurchaseModal .supplier').on('change', function (e) {
+                    $.get("/supplier", function (data) {
+                        appendDataOnOptionChange(data, [
+                            'supplier',
+                            'supplierItem',
+                            'supplierItemID',
+                            'itemPrice',
+                        ])
+                        removeAllOrders()
                     })
+                })
 
-                    $('#newPurchaseModal .itemQuan').on('change', function (e) {
+                $('#newPurchaseModal .supplierItemID').on('change', function (e) {
+                    $.get("/supplier", function (data) {
+                        selectDataOnOptionChange(data, [
+                            'supplier',
+                            'supplierItem',
+                            'supplierItemID',
+                        ])
+                    })
+                })
+
+                $('#newPurchaseModal .supplierItem').on('change', function (e) {
+                    $.get("/supplier", function (data) {
+                        selectDataOnOptionChange(data, [
+                            'supplier',
+                            'supplierItemID',
+                            'supplierItem'
+                        ])
+                    })
+                })
+
+                $('#newPurchaseModal .itemQuan').on('change', function (e) {
+                    const totalPrice = $('#newPurchaseModal .itemPrice').val() * $(
+                        '#newPurchaseModal .itemQuan').val()
+                    $('#newPurchaseModal .totalPrice').val(totalPrice)
+
+                })
+
+                $('#newPurchaseModal .itemQuan').on('keyup', function (e) {
+                    if ($('#newPurchaseModal .itemQuan').val() < 0) {
+                        alert('訂購數量必須大於0')
+                        $('#newPurchaseModal .itemQuan').val('')
+                    } else {
                         const totalPrice = $('#newPurchaseModal .itemPrice').val() * $(
                             '#newPurchaseModal .itemQuan').val()
                         $('#newPurchaseModal .totalPrice').val(totalPrice)
+                    }
+                })
 
-                    })
+                $('#newPurchaseModal .addOrder').click(function () {
+                    if ($('#newPurchaseModal .itemQuan').val() <= 0) {
+                        alert('訂購數量必須大於0')
+                        $('#newPurchaseModal .itemQuan').val('')
+                    } else if (!$('#newPurchaseModal .itemQuan').val()) {
+                        alert('請輸入欲訂購數量')
+                    } else {
+                        appendDataToTable({
+                            supplierItemID: $("#newPurchaseModal .supplierItemID").find(
+                                ":selected").text(),
+                            supplierItem: $("#newPurchaseModal .supplierItem").find(
+                                ":selected")
+                                .text(),
+                            itemPrice: $('#newPurchaseModal .itemPrice').val(),
+                            itemQuan: $('#newPurchaseModal .itemQuan').val(),
+                            totalPrice: $('#newPurchaseModal .totalPrice').val()
+                        })
+                        $('#newPurchaseModal .itemQuan').val('')
+                        $('#newPurchaseModal .totalPrice').val('')
 
-                    $('#newPurchaseModal .itemQuan').on('keyup', function (e) {
-                        if ($('#newPurchaseModal .itemQuan').val() < 0) {
-                            alert('訂購數量必須大於0')
-                            $('#newPurchaseModal .itemQuan').val('')
-                        } else {
-                            const totalPrice = $('#newPurchaseModal .itemPrice').val() * $(
-                                '#newPurchaseModal .itemQuan').val()
-                            $('#newPurchaseModal .totalPrice').val(totalPrice)
-                        }
-                    })
-
-                    $('#newPurchaseModal .addOrder').click(function () {
-                        if ($('#newPurchaseModal .itemQuan').val() <= 0) {
-                            alert('訂購數量必須大於0')
-                            $('#newPurchaseModal .itemQuan').val('')
-                        } else if (!$('#newPurchaseModal .itemQuan').val()) {
-                            alert('請輸入欲訂購數量')
-                        } else {
-                            appendDataToTable({
-                                supplierItemID: $("#newPurchaseModal .supplierItemID").find(
-                                    ":selected").text(),
-                                supplierItem: $("#newPurchaseModal .supplierItem").find(
-                                        ":selected")
-                                    .text(),
-                                itemPrice: $('#newPurchaseModal .itemPrice').val(),
-                                itemQuan: $('#newPurchaseModal .itemQuan').val(),
-                                totalPrice: $('#newPurchaseModal .totalPrice').val()
-                            })
-                            $('#newPurchaseModal .itemQuan').val('')
-                            $('#newPurchaseModal .totalPrice').val('')
-
-                            $("#newPurchaseModal .myTable").find('button[name="remove"]').each(
-                                function () {
-                                    $(this).click(function () {
-                                        let currentId = $(this).parents("tr").children(
-                                                'td')[1]
-                                            .innerText
-                                        finalOrder = finalOrder.filter(ele => ele
-                                            .supplierItemID != currentId)
-                                        $(this).parents("tr").remove();
-                                    })
-                                })
-                        }
-                    })
-
-                    $('#modal-footer .cancel').on('click', function (e) {
-                        removeAllOrders()
-                    })
-
-
-                    $("#purchaseModal").on("hide.bs.modal", function (e) {
-                        // console.log('關閉視窗前呼叫');
-
-                        $('#purchaseModal .tbody_').find('tr').remove()
-                    });
-
-                    function addMoreDataEvent() {
-                        $(".tbodyForpurchase").find('button[name="more"]').each(
+                        $("#newPurchaseModal .myTable").find('button[name="remove"]').each(
                             function () {
                                 $(this).click(function () {
-                                    let id = $(this).siblings('input').val()
-                                    $('#purchaseModal .purchaseId').val(id)
+                                    let currentId = $(this).parents("tr").children(
+                                        'td')[1]
+                                        .innerText
+                                    finalOrder = finalOrder.filter(ele => ele
+                                        .supplierItemID != currentId)
+                                    $(this).parents("tr").remove();
+                                })
+                            })
+                    }
+                })
 
-                                    $.get(`/purchase/${id}`, function (data) {
-                                        $('#purchaseModal #ModalLabel').text(
-                                            `採購單#${data.orderId}`)
-                                        $('#purchaseModal .supplier').val(data.orderTo)
-                                        $('#purchaseModal .tbody_').find("tr").remove()
+                $('#modal-footer .cancel').on('click', function (e) {
+                    removeAllOrders()
+                })
 
-                                        for (let i = 0; i < data.orderItem.length; ++i) {
-                                            $('#purchaseModal .tbody_').append(
-                                                `<tr>
+
+                $("#purchaseModal").on("hide.bs.modal", function (e) {
+                    // console.log('關閉視窗前呼叫');
+
+                    $('#purchaseModal .tbody_').find('tr').remove()
+                });
+
+                function addMoreDataEvent() {
+                    $(".tbodyForpurchase").find('button[name="more"]').each(
+                        function () {
+                            $(this).click(function () {
+                                let id = $(this).siblings('input').val()
+                                $('#purchaseModal .purchaseId').val(id)
+
+                                $.get(`/purchase/${id}`, function (data) {
+                                    $('#purchaseModal #ModalLabel').text(
+                                        `採購單#${data.orderId}`)
+                                    $('#purchaseModal .supplier').val(data.orderTo)
+                                    $('#purchaseModal .tbody_').find("tr").remove()
+
+                                    for (let i = 0; i < data.orderItem.length; ++i) {
+                                        $('#purchaseModal .tbody_').append(
+                                            `<tr>
                                             <td>${data.orderItem[i].item_id}</td>
                                             <td>${data.orderItem[i].item_name}</td>
                                             <td>${data.orderItem[i].price}</td>
                                             <td>${data.orderInfo[i].itemQuan}</td>
                                             <td>${data.orderInfo[i].totalPrice}</td>
                                         </tr>`
-                                            )
-                                        }
+                                        )
+                                    }
 
-                                        $("#purchaseModal .status").children().each(
-                                            function () {
-                                                if ($(this).text() === data.status) {
-                                                    $(this).attr("selected", "true")
-                                                }
-                                            })
+                                    $("#purchaseModal .status").children().each(
+                                        function () {
+                                            if ($(this).text() === data.status) {
+                                                $(this).attr("selected", "true")
+                                            }
+                                        })
 
-                                        $("#purchaseModal .payMethod").children().each(
-                                            function () {
-                                                if ($(this).text() === data.payment) {
-                                                    $(this).attr("selected", "true")
-                                                }
-                                            })
+                                    $("#purchaseModal .payMethod").children().each(
+                                        function () {
+                                            if ($(this).text() === data.payment) {
+                                                $(this).attr("selected", "true")
+                                            }
+                                        })
 
-                                        $('#purchaseModal').modal('toggle')
-                                    })
+                                    $('#purchaseModal').modal('toggle')
                                 })
                             })
+                        })
+                }
+
+
+
+                $("#purchaseModal .modiflyPurchase").click(function () {
+
+                    let id = $('#purchaseModal .purchaseId').val()
+
+                    let patchData = {
+                        status: $('#purchaseModal .status').find(
+                            ":selected").text(),
+                        payment: $('#purchaseModal .payMethod').find(
+                            ":selected").text()
                     }
 
+                    axios.patch(`/purchase/${id}`, patchData)
+                        .then(res => {
+                            console.log(res);
+                            $('#purchaseModal').modal('toggle')
+                            window.location.reload(true)
+                        })
+                        .catch(error => {
+                            console.log(error.response);
+                        });
+                })
 
+                $("#purchaseModal .deletePurchase").click(function () {
+                    let id = $('#purchaseModal .purchaseId').val()
 
-                    $("#purchaseModal .modiflyPurchase").click(function () {
+                    axios.delete(`/purchase/${id}`)
+                        .then(res => {
+                            console.log(res);
+                            $('#purchaseModal').modal('toggle')
+                            window.location.reload(true)
+                        })
+                        .catch(error => {
+                            console.log(error.response);
+                        });
+                })
 
-                        let id = $('#purchaseModal .purchaseId').val()
-
-                        let patchData = {
-                            status: $('#purchaseModal .status').find(
-                                ":selected").text(),
-                            payment: $('#purchaseModal .payMethod').find(
-                                ":selected").text()
-                        }
-
-                        axios.patch(`/purchase/${id}`, patchData)
-                            .then(res => {
-                                console.log(res);
-                                $('#purchaseModal').modal('toggle')
-                                window.location.reload(true)
-                            })
-                            .catch(error => {
-                                console.log(error.response);
-                            });
-                    })
-
-                    $("#purchaseModal .deletePurchase").click(function () {
-                        let id = $('#purchaseModal .purchaseId').val()
-
-                        axios.delete(`/purchase/${id}`)
-                            .then(res => {
-                                console.log(res);
-                                $('#purchaseModal').modal('toggle')
-                                window.location.reload(true)
-                            })
-                            .catch(error => {
-                                console.log(error.response);
-                            });
-                    })
-
-                    function appendQueryReult(data) {
-                        const tableBody = $('#queryTab .tbodyForpurchase')
-                        tableBody.append(`<tr>
+                function appendQueryReult(data) {
+                    const tableBody = $('#queryTab .tbodyForpurchase')
+                    tableBody.append(`<tr>
                                             <td> ${data.orderId}</td>
                                             <td> ${data.orderTo} </td>
                                             <td> ${data.payment} </td>
@@ -788,58 +797,58 @@
                                                 <button type="click" class="btn btn-outline-dark" name="more">點我</button>
                                             </td>
                                         </tr>`)
+                }
+
+                $("#queryTab .queryButton").click(function () {
+                    $('#queryTab .queryResult').attr('hidden', 'true')
+                    $('#queryTab .tbodyForpurchase').find("tr").remove();
+
+                    let option = {}
+                    if ($('#queryTab .orderId').val())
+                        option.orderId = $('#queryTab .orderId').val()
+                    if ($('#queryTab .date').val())
+                        option.date = $('#queryTab .date').val()
+                    if ($('#queryTab .supplier').find(':selected').val() != 0)
+                        option.orderTo = $('#queryTab .supplier').find(':selected').text()
+                    if ($('#queryTab .payment').find(':selected').val() != 0)
+                        option.payment = $('#queryTab .payment').find(':selected').text()
+                    if ($('#queryTab .status').find(':selected').val() != 0)
+                        option.status = $('#queryTab .status').find(':selected').text()
+                    // console.log(option)
+
+                    if (Object.keys(option).length === 0) {
+                        let yes = confirm('是否要搜尋所有採購單')
+                        if (!yes) {
+                            $('#queryTab .queryResult').attr('hidden', 'true');
+                            return
+                        }
                     }
 
-                    $("#queryTab .queryButton").click(function () {
-                        $('#queryTab .queryResult').attr('hidden', 'true')
-                        $('#queryTab .tbodyForpurchase').find("tr").remove();
-
-                        let option = {}
-                        if ($('#queryTab .orderId').val())
-                            option.orderId = $('#queryTab .orderId').val()
-                        if ($('#queryTab .date').val())
-                            option.date = $('#queryTab .date').val()
-                        if ($('#queryTab .supplier').find(':selected').val() != 0)
-                            option.orderTo = $('#queryTab .supplier').find(':selected').text()
-                        if ($('#queryTab .payment').find(':selected').val() != 0)
-                            option.payment = $('#queryTab .payment').find(':selected').text()
-                        if ($('#queryTab .status').find(':selected').val() != 0)
-                            option.status = $('#queryTab .status').find(':selected').text()
-                        // console.log(option)
-
-                        if (Object.keys(option).length === 0) {
-                            let yes = confirm('是否要搜尋所有採購單')
-                            if (!yes) {
-                                $('#queryTab .queryResult').attr('hidden', 'true');
-                                return
+                    $.get('/purchase', {
+                        search: 1,
+                        option
+                    }, function (data) {
+                        // console.log(data)
+                        if (data.length === 0) {
+                            alert('查無採購單')
+                        } else {
+                            for (let i = 0; i < data.length; ++i) {
+                                console.log(data[i]);
+                                appendQueryReult(data[i])
                             }
+                            addMoreDataEvent()
+                            $('#queryTab .totalCount').text(`共${data.length}筆`)
+                            if ($('#queryTab .queryResult').attr('hidden'))
+                                $('#queryTab .queryResult').removeAttr('hidden');
                         }
-
-                        $.get('/purchase', {
-                                search: 1,
-                                option
-                            }, function (data) {
-                                // console.log(data)
-                                if (data.length === 0) {
-                                    alert('查無採購單')
-                                } else {
-                                    for (let i = 0; i < data.length; ++i) {
-                                        console.log(data[i]);
-                                        appendQueryReult(data[i])
-                                    }
-                                    addMoreDataEvent()
-                                    $('#queryTab .totalCount').text(`共${data.length}筆`)
-                                    if ($('#queryTab .queryResult').attr('hidden'))
-                                        $('#queryTab .queryResult').removeAttr('hidden');
-                                }
-                            })
-                            .fail(error => {
-                                console.log(error.response);
-                            });
                     })
+                        .fail(error => {
+                            console.log(error.response);
+                        });
                 })
-            </script>
+            })
+        </script>
 
-    </body>
+</body>
 
 </html>

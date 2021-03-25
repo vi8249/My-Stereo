@@ -60,13 +60,13 @@ passport.deserializeUser(function (id, done) {
 });
 
 passport.use(new LocalStrategy({
-        // 改以名為 email 的欄位資訊作為帳號
-        usernameField: 'account',
-        // 改以名為 passwd 的欄位資訊作為密碼
-        passwordField: 'password',
-        // 讓 varify callback 函式可以取得 req 物件
-        passReqToCallback: true
-    },
+    // 改以名為 email 的欄位資訊作為帳號
+    usernameField: 'account',
+    // 改以名為 passwd 的欄位資訊作為密碼
+    passwordField: 'password',
+    // 讓 varify callback 函式可以取得 req 物件
+    passReqToCallback: true
+},
     // 當請 passport 要驗證時，呼叫此 callback 函式，並帶入驗證資訊驗證
     function (req, username, password, done) {
         User.findOne({
@@ -123,9 +123,9 @@ app.get('/login', function (req, res) {
 })
 
 app.post('/login', passport.authenticate('local', {
-        failureRedirect: '/login',
-        failureFlash: true
-    }),
+    failureRedirect: '/login',
+    failureFlash: true
+}),
     // 驗證成功時，將呼叫此函式，且 req.user 將帶有該使用者資訊
     function (req, res) {
         // 在這先執行一些動作 code...
