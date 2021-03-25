@@ -9,4 +9,4 @@
 目前完成: 採購。
 
 Demo  
-![image](https://github.com/vi8249/My-Stereo/blob/main/demo/demo1.gif?raw=true)
+![image](https://github.com/vi8249/My-Stereo/blob/main/demo/demo2.gif?raw=true)
