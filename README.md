@@ -2,7 +2,7 @@
 
 簡單的全端展示專案
 
-使用 - bootstrap, jquery, express, ejs, Mongoose, bcrypt, passport
+使用 - html, css, javascript, bootstrap, jquery, node.js, express, Mongoose, bcrypt, passport
 
 預計功能: 採購、銷貨、存貨管理。
 
